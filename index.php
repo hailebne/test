@@ -7,3 +7,6 @@
  */
 
 phpinfo();
+
+
+echo "hello world";
