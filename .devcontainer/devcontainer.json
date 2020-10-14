@@ -1,0 +1,47 @@
+// For format details, see https://aka.ms/vscode-remote/devcontainer.json or this file's README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.128.0/containers/php-7-mariadb
+// For format details, see https://aka.ms/vscode-remote/devcontainer.json or this file's README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.112.0/containers/php-7
+{
+	"name": "PHP 7, Apache & MariaDB",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "php-apache",
+	
+	// Set *default* container specific settings.json values on container create.
+	"settings": { 
+		"terminal.integrated.shell.linux": "/bin/bash"
+	},
+
+	// Add the IDs of extensions you want installed when the container is created.
+	"extensions": [
+		"felixfbecker.php-debug",
+		"felixfbecker.php-intellisense",
+		"mtxr.sqltools",
+		"dkundel.vscode-new-file",
+		"formulahendry.auto-close-tag",
+		"formulahendry.auto-rename-tag",
+		"coenraads.bracket-pair-colorizer-2",
+		"streetsidesoftware.code-spell-checker",
+		"pranaygp.vscode-css-peek",
+		"msjsdiag.debugger-for-chrome",
+		"dbaeumer.vscode-eslint",
+		"sleistner.vscode-fileutils",
+		"donjayamanne.githistory",
+		"eamodio.gitlens",
+		"dsznajder.es7-react-js-snippets",
+		"xabikos.javascriptsnippets",
+		"bmewburn.vscode-intelephense-client",
+		"esbenp.prettier-vscode",
+		"ms-vscode-remote.remote-containers",
+		"hakcorp.php-awesome-snippets",
+		"ms-azuretools.vscode-docker"
+	],
+
+	"workspaceFolder": "/var/www/html",
+
+	// Uncomment to connect as a non-root user. See https://aka.ms/vscode-remote/containers/non-root.
+	"remoteUser": "vscode",
+
+	// // map Docker socket into the development container
+	// "runArgs": [ "-v", "/var/run/docker.sock:/var/run/docker.sock"]
+}
